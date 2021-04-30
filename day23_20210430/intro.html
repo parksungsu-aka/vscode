@@ -8,17 +8,80 @@
     <meta charset="UTF-8">
 
     <title>SU </title>
+    <link rel = "preconnect"href = "https://fonts.gstatic.com">
+<link href = "https://fonts.googleapis.com/css2? family = Do + Hyeon & display = swap"rel = "스타일 시트">
   </head>
- <body>
+  <!-- style 속성 : css를 적용할 떄 사용 
+                속성 값으로 css 문법을 사용 
+            style="background-color: ;" : 배경색 지정할떄 쓰는 명령어.
+            style="color: black;"       :    글자색 지정  
+            style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" : 폰트 명령어-->
+ <body style="background-color: yellow;">
     <!-- < 사진, 그림 > 화면에 보여줄 내용 작성  -->
-    <H1></H1>
+    <H1 style="background-color: white;"> SUSTUDIO</H1>
     <p>해당 내용을 작성합니다</p>
-    <h2>제목</h2>
+    <h2 style="background-color: tomato;">제목</h2>
     <H3>제목</H3>
-    <h4>제목</h4>
-    <h5>제목</h5>
+    <h4 style="color: black;">제목</h4>
+    <h5 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">제목</h5>
     <h6>제목</h6>
     <!--comment (주석처리) [ ctrl + / ] -->
+    <!-- 링크태그(LINK) <a>링크내용</a> << 시작태그안에다가  
+    href=""입력 >> <a href="https://www.daum.net/"> : 속성(attribute)
+        속성값에 주소 값을 작성 (태그안에 넣는 기능을 속성이라고 칭함.)
+     -->
+    <a href="https://www.daum.net/"> 링크 내용 </a>
+
+     <!-- 구글폰트 사용 -->
+     <h1 style="font-family: 'Do Hyeon', sans-serif;">
+        구글폰트 내용 </h1>
+
+        <!--글자 편집을 위한 다양한 태그  -->
+        <b style="color: chartreuse;"> 글자가 </b>
+        <strong>나오는 모양</strong>
+        <i>이 어떤지 </i>
+        <small style="color: crimson;">확인을</small>
+        <del style="background-color: cyan;">해보시기</del>
+        <sub>바랍니다,,,,</sub>
+        <sup>lol!!!!!!!!!!!!!!!!!!!!</sup>
+
+        <!-- 색 표현 명령 문법!!! 
+        RED,GREEN,BLUE (빛의삼원색) 0~255 지정해서 원하는 컬러 지정할수 있다.  (255,0,0) : 미세하게 색을 지정할때 쓰는 명령어
+        10진수 : 0~9
+        2진수 : 0(false) & 1(true) 
+        16진수 : 0~9,   A , B, C, D, E, F 
+        #FF0000 (16진수이용 ) : FF RED  00 -GREEN  00 - BLUE / 00~FF (255)       
+        rgba (0.1~1): 투명도 지정할떄 쓰는 명령 문법-->
+        <h2 style="background-color: red;">빨간색</h2> 
+        <h2 style="background-color: rgb(255, 0,0);">빨간색</h2>
+        <h2 style="background-color: rgba(168, 76, 76, 0.4);">빨간색</h2>
+        <h2 style="background-color:#FF0000;">빨간색</h2>
+
+        <!-- 이미지 편집 
+        src 속성값  :   그림경로  [ 이미지 속성은 시작태그와 끝태그 없다.]
+        width  : 가로 너비
+        height : 높이 세로
+        img >> width , heigth 속성 -->
+            
+        <img src="/images/2787.jpg" style="width:200px; height: 100 ;">
+        
+        <!-- 또 다른 명령어  -->
+        <img src="/images/2787.jpg" width="300" height="150">
+
+        <!-- [alt= "": 이미지 설명 속성 ]-->
+        <img src="/images/2787.jpg" width="300" height="150" alt="이미지 불러오는중">
+
+        <!-- 이미지를 링크로 활용하기 .
+            target 속성에 _blank : 새창  -->
+
+        <a href="https://google.co.kr"   target="_blank">
+        <img src="/images/구글 애플.jpg" width="100" height="50" >
+        </a>
+
+
+
+
+
 
  </body>
 </html>
