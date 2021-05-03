@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <title>Document</title>
-<!-- Form Tag : 웹사이트 사용자가 입력할수있는 태그 그로인해 서버쪽으로 전달해주는 태그
-                입력하는 데이터를 전달하는 태그 ex) 회원가입 , 게시판 (글쓰기), 로그인  -->
+<!-- Form Tag : 웹사이트 사용자가 입력할수있는 태그 그로인해 서버=(백엔드)로 전달해주는 태그 << 주목적.
+                입력하는 데이터를 전달하는 태그     서버=(백엔드) 전송하는게 주목적
+                ex) 회원가입 , 게시판 (글쓰기/수정), 로그인, 검색창  -->
 
 
 <body>
@@ -15,7 +16,8 @@
             <input type= "text" id= "id1" 
             name= "name1"> 속성값에 입력한 데이터가 담겨서 서버로 전달됨.
             입력창에 날씨라고 입력했다면 'name1=날씨'형태로 백엔드로 전달됨.
-        placeholder= "아이디를 입력하십시오">> 입력안내 해주는 명령어.-->
+        placeholder= "아이디를 입력하십시오">> 입력안내 해주는 명령어.
+            input 태그는 form안에서 명령하기. -->
     <form>
         ID:<input type= "text" id= "id1" name= "name1" placeholder="아이디를입력하십시오"><br>
         <label for="id2">PASSWORD:</label>
