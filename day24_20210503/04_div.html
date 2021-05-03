@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            background-color: crimson;
+        } */
+        /* id를 이용하여 css를 적용하는 방법 
+               영역구분하는 명령문법은 #id 앞에 #을 붙인다.
+               주의할점은.. : 똑같은 id를 두개 이상의 태그에 적용안함
+               한 id는 하나의 태그에만. */
+        #id1{
+                background-color: gray;
+        }
+        #id2{
+                background-color: red;
+        }
+        #id3{
+            background-color: red;
+        }
+        #id4{
+            color: blue;
+        }
+        /* class 적용 : 여러 요소에 같은 효과 등을 지정하고자 할 때
+            클래스는 여러 요소 (태그)에 지정할 수 있음 
+            여러 클래스를 동시에 지정할 수 있음*/
+        .class1{
+                background-color: blueviolet;
+        }
+        .class2{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--div tag : 영역을 나누고자 할떄에 쓰는 태그
+                보통 div 태그에 id 또는 class를 부여하여 활용한다.  
+                블록요소 (Block Element) : 줄이바뀜.(한줄)
+             인라인 요소 (Inline Elemnt) : 줄이 바뀌지 않음.
+             <span> 태그 : 어떠한 글자 또는 구분 일부분에 대한 구분을 하는 
+            id="" 태그에 이름 지정하는 명령어.-->
+               
+                
+                <div id="id1">
+                    div1
+                     이 문장을 작성하면서 <span id="id3">인라인 요소를 </span><div>사용하고
+                     인라인 요소에 id적용</div>
+                </div>
+                <!-- id는 동시에 2개 적용이 불가능 X 
+                        또 'id2 id4'이라는 id를 적용한 결과가 배경색 글자컬러를 지정한 값이 나오질 않음. -->
+                <div id="id2 id4">
+                    div2
+                </div>
+
+                <!-- class 속성: 여러구역에 동일하게 써도 무방한 태그 -->
+
+                <div   class="class1" >
+                    div3
+                </div>
+                <!-- class1 class2 적용 -->
+                <div    class="class1 class2">
+                    div4
+                </div>
+                <div>
+                    <h2 class="class1 class2">New :) </h2>
+                </div>
+
+
+</body>
+</html>
