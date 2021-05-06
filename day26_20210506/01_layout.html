@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUSTUDIO</title>
+    <style>
+        /* 상단 위 */
+        body{
+            background-color: crimson;
+            color: black;
+
+        }
+        .header{
+            padding: 30px;
+            text-align: center;
+            background-color: cadetblue;
+        }
+        .nav{
+            display: inline-block;
+            position: sticky;
+            top: 0;
+            background-color: black;
+            width: 100%;
+        }
+        .nav a{
+            color: cornsilk;
+            text-align: center;
+            padding: 15px;
+            text-decoration:none ;
+        }
+
+        .nav a :hover{
+            background-color: darkgray;
+            color: black;
+        }
+        .left{
+            float: left;
+            width: 75%;
+            background-color: cornsilk;
+        }
+        .rigth{
+            float: left;
+            width: 25%;
+            background-color: black;
+            padding-left: 10px;
+        }
+        .footer{
+             background-color: turquoise;
+             text-align: center;
+             padding: 20px;
+             margin-top: 20px;
+        }
+        .imgs{
+            background-color: whitesmoke;
+            width: 100%;
+        }
+        .contents::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* 화면의 폭이 좁혀졌을 떄 1단으로 재배치 
+        미디어 쿼리 브라우저 폭이 700px 이하일떄 부터 아래 내용이 적용됨. */
+        @media screen and (max-width:700px){
+            .ieft,
+            .rigth{
+                width: 100%;
+                padding : 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1> SUSTUDIO </h1>
+    </div>
+    
+    <div class="nav">
+        <a href="#">메뉴1</a>
+        <a href="#">메뉴2</a>
+        <a href="#">메뉴3</a>
+        <a href="#">메뉴4</a>
+    </div>
+    
+    <div class="contents">
+        
+    </div>
+    
+    <div class="footer">
+        
+    </div>
+<!-- 오른쪽 25% 내용  -->
+<div class="right">
+    <div class="card">
+        <h2>자기소개</h2>
+        <div class="imgs" style="height: 200px;"></div>
+    </div>
+
+    <div class="card">
+        <div class="imgs" style="height: 100px;">
+        <p>이미지 들어갑니다.</p>
+        <img src="/images/15732369_1835067866781118_272246765632887326_o.jpg" width="50px" height="50px">
+        </div>
+        <div class="imgs" style="height: 100px;">
+            <p>이미지 들어갑니다.</p>
+        </div>
+        <div class="imgs" style="height: 100px;">
+            <p>이미지 들어갑니다.</p>
+        </div>
+
+        <div class="card">
+            <h2>@sustudios_official</h2>
+            <h3>070-XXX-XXXX</h3>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
