@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+            //document 오른쪽있을때는 입력값호출용 
+        //---------------------------------------------------------------------
+        function test1(){
+            //body의 id요소에 접근
+            // 현재문서 (document)에 있는 id1이라는 id를
+            //가진 요소를 사용..
+            console.log(document.getElementById('id1'));
+            
+            //innerHTML : 태그 내부 (시작,종료태그사이)에 접근문법.
+            console.log(document.getElementById('id1').innerHTML);
+
+            //위에 문장과 아래문장과 같다 밑에는 변수로 문장을 만들어서 명령한 문장.
+            var ele =document.getElementById('id1');
+            console.log(ele);
+            console.log(ele.innerHTML);
+            
+            // 변수로 문장을 해석한 문법
+            var ele1=document.getElementById('id1').innerHTML;
+            console.log(ele1);
+    //-------------------------------------------------------------------------
+
+
+
+            // id1 부분의 내용을 변경 [document.getElementById('id1').innerHTML 좌측에 있을때 값을 수정하는것/ 우변에 있을때는 값을 불러오는것.]
+            //document 문법왼쪽 = 수정할때.
+            document.getElementById('id1').innerHTML ='수정할 내용';
+            console.log(ele1);
+        }
+
+            
+    </script>
+</head>
+<body>
+    <button onclick="test1()">함수 호출 </button>
+    <div id="id1">
+        id1영역.
+    </div>
+</body>
+</html>
